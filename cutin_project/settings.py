@@ -44,13 +44,15 @@ INSTALLED_APPS = [
     # 3rd party
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_auth',
+    # 'rest_auth', (deprecated)
+    'dj_rest_auth',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
+    'dj_rest_auth.registration',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-    'rest_auth.registration',
+    # 'rest_auth.registration', (deprecated)
 
     # Installed apps
     'users.apps.UsersConfig',
